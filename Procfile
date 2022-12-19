@@ -1,1 +1,1 @@
-web: gunicorn Messaging-System-REST-API.wsgi
+web: gunicorn messaging_system.wsgi
