@@ -8,7 +8,7 @@ A message contains:
 * Subject
 * creation date
 
-The rest API should contains:
+The rest API contains:
 
   ```POST``` **/dj-rest-auth/registration/**
 
