@@ -8,7 +8,17 @@ A message contains:
 * Subject
 * creation date
 
-The rest API contains:
+
+**Database**: PostgreSQL
+
+**Host Server**: Railway
+
+Using **TokenAuthentication**
+
+    
+## REST API
+
+The REST API contains:
 
   ```POST``` **/dj-rest-auth/registration/**
 
@@ -58,7 +68,7 @@ The rest API contains:
 
   * **Target**: Get all users.
  
-  * **Usage**: Requires **Key = Authorization** and **value = token {key}**
+  * **Usage**: Requires Header **Key = Authorization** and **value = token {key}**
    
      -------------------------------------------------------------- 
   
@@ -66,7 +76,7 @@ The rest API contains:
 
   * **Target**: Get user with the given id.
   
-  * **Usage**: Requires **Key = Authorization** and **value = token {key}**
+  * **Usage**: Requires Header **Key = Authorization** and **value = token {key}**
 
      -------------------------------------------------------------- 
 
@@ -100,7 +110,7 @@ The rest API contains:
 
   * **Target**: Get a specific message with the given id (read message). An authenticated user can only see his own messages (as the message receiver).
   
-  * **Usage**: Requires **Key = Authorization** and **value = token {key}**
+  * **Usage**: Requires Header **Key = Authorization** and **value = token {key}**
 
        -------------------------------------------------------------- 
 
@@ -108,7 +118,7 @@ The rest API contains:
 
   * **Target**: Delete a message with the given id. An authenticated user can only delete messages as owner or as receive.
   
-  * **Usage**: Requires **Key = Authorization** and **value = token {key}**
+  * **Usage**: Requires Header **Key = Authorization** and **value = token {key}**
   
        -------------------------------------------------------------- 
     
@@ -116,7 +126,7 @@ The rest API contains:
 
   * **Target**: Get all the messages that were sent for the user with the given id.
   
-  * **Usage**: Requires **Key = Authorization** and **value = token {key}**
+  * **Usage**: Requires Header **Key = Authorization** and **value = token {key}**
   
        -------------------------------------------------------------- 
 
@@ -124,5 +134,5 @@ The rest API contains:
 
   * **Target**: Get all the unread messages that were sent for the user with the given id.
   
-  * **Usage**: Requires **Key = Authorization** and **value = token {key}**
+  * **Usage**: Requires Header **Key = Authorization** and **value = token {key}**
 
